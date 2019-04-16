@@ -1,0 +1,14 @@
+{
+	"db":{
+			"host":"",
+			"user": "",
+			"password": "",
+			"db": "",
+			"charset": "",
+			"port":
+		},
+	"fbac":{
+		"username":"",
+		"password":""
+	}
+}
