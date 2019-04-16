@@ -64,12 +64,12 @@ def scroll(driver):
 
     while True:
         try:
-            # 尋找網頁版的"載入更多"元素 , 如找不到則 TimeoutException 且return
+            # 向下滾動,觸發ajax , 如己滾動到最底部則觸發 TimeoutException 且return
             more_item_xpath = "//div[@class='_3i9']/div[@class='_5h60 _30f']/img"
             WebDriverWait(driver, 2).until(EC.visibility_of_element_located((By.XPATH, more_item_xpath)))
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")  # scrolling
         except TimeoutException as ex:
-            # 尋找手機版的"載入更多"元素 , 如找不到則 TimeoutException 且return
+            #向下滾動,觸發ajax , 如己滾動到最底部則觸發 TimeoutException 且return
             try:
                 WebDriverWait(driver, 2).until(EC.visibility_of_element_located((By.CSS_SELECTOR, '.centeredIndicator')))
                 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")  # scrolling
