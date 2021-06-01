@@ -23,6 +23,6 @@ requests2==2.16.0
 selenium==3.5.0
 six==1.11.0
 soupsieve==1.9
-urllib3==1.21.1
+urllib3==1.26.5
 wcwidth==0.1.7
 xmltodict==0.11.0
