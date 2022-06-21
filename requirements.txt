@@ -9,7 +9,7 @@ demjson==2.2.4
 idna==2.5
 lxml==4.1.1
 Mypackage==0.1
-numpy==1.13.3
+numpy==1.22.0
 olefile==0.44
 Pillow==4.3.0
 psycopg2==2.7.3.1
